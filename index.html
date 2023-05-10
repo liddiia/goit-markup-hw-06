@@ -72,6 +72,86 @@
                   <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
               </button>
+
+              <form name="contact-form">
+                <p class="md-top-text">
+                  Leave your contacts and we will call you back
+                </p>
+                <label>
+                  <span class="md-entry-field-name">Name</span>
+                  <div class="md-entry-field">
+                    <svg class="md-entry-field-icons" width="12" height="12">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                    <input class="md-entry" type="name" name="name" required />
+                  </div>
+                </label>
+
+                <label>
+                  <span class="md-entry-field-name">Phone</span>
+                  <div class="md-entry-field">
+                    <svg class="md-entry-field-icons" width="13" height="13">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <input
+                      class="md-entry"
+                      type="tel"
+                      name="phone_number"
+                      required
+                    />
+                  </div>
+                </label>
+                <label>
+                  <span class="md-entry-field-name">Email</span>
+                  <div class="md-entry-field">
+                    <svg class="md-entry-field-icons" width="15" height="12">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                    <input
+                      class="md-entry"
+                      type="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                </label>
+                <label>
+                  <div>
+                    <span class="md-entry-field-name">Comment</span>
+                    <textarea
+                      class="md-textarea"
+                      name="feedback"
+                      rows=""
+                      placeholder="Text input"
+                    ></textarea>
+                  </div>
+                </label>
+                <label>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="hobby"
+                      value="music"
+                      checked
+                      required
+                    />
+                    <span class="md-agreemant-text">
+                      I accept the terms and conditions of the
+                      <a
+                        href=""
+                        target="_blank"
+                        rel="noopener noreffer"
+                        class="privat-policy"
+                      >
+                        Privacy Policy
+                      </a></span
+                    >
+                  </div>
+                </label>
+                <button class="button-studio button" type="submit">
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -541,7 +621,7 @@
         </div>
         <!--Social media-->
         <div class="soc-media">
-          <p class="soc-media-titel">Social media</p>
+          <p class="footer-subtitels">Social media</p>
           <ul class="social">
             <li class="social-items list">
               <a
@@ -597,10 +677,30 @@
             </li>
           </ul>
         </div>
+        <!--============Subscribe-form==============-->
+        <div class="subscribe">
+          <p class="footer-subtitels">Subscribe</p>
+          <form class="subscribe-form">
+            <input
+              class="subscribe-form-input"
+              type="email"
+              name="user_email"
+              placeholder="E-mail"
+              aria-label="Email input field"
+              required
+            />
+            <button type="submit" class="subscribe-btn">
+              <p>Subscribe</p>
+              <svg class="subscribe-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </form>
+          <!-- ==========Subscribe-form end=================-->
+        </div>
       </div>
     </footer>
     <!-- Modal Wind studio -->
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
