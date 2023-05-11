@@ -246,7 +246,7 @@ body {
 .modal {
   position: absolute;
   width: 408px;
-  height: 584px;
+  
   top: 80px;
   left: 39%;
   background-color: var(--color-dairy);
@@ -285,69 +285,123 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
+
+/*===================Modal  Forma=================*/
 .md-top-text {
-  font-weight: 500;
+  display: block;
+  margin-bottom: 16px;
+    font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-grey);
    text-align: center;
-    margin-bottom: 16px;
-   
-}
+  }
+.md-form{
+  width: 360px;
 
-.md-entry-field-name {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.04em;
-  color: var(--color-light-slate);
 }
-.md-entry-field {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  /*  Set transition values  */
-  transition-property: border;
-  transition-duration: 250ms;
+.md-form-label{
+  display: block;
+  margin-bottom: 4px;
+font-weight: 400;
+font-size: 12px;
+line-height:calc(14/12);
+
+letter-spacing: 0.04em;
+
+color:var(--color-light-slate);
+
+}
+.md-field {
+  position: relative;
+  margin-bottom: 8px;
+ 
+}
+.md-input{
+width: 100%;
+height: 40px;
+border: 1px solid var(--color-navy-blue-modal);
+border-radius: 4px;
+outline: 1px solid transparent;
+outline-offset: -1px;
+transition-property: outline-color;
+transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--color-navy-blue);
+  padding: 0 38px;
+}
+.md-input:focus{
+  outline-color:var(--color-iris);
+ 
 }
 .md-entry-field-icons {
-  margin-top: calc(50%-6px);
-  margin-bottom: calc(50%-6px);
-  margin-right: 0;
-  margin-left: 19px;
-  fill: var(--color-navy-blue);
+  position: absolute;
+  left: 18px;
+
+top: 50%;
+transform: translateY(-50%);
   /*  Set transition values  */
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
-.contact-form {
-}
-.md-entry {
-  border: none;
+.md-input:focus + .md-entry-field-icons {
+  fill: var(--color-iris)
 }
 
-.md-entry-field:placeholder-shown {
-  border: 1px solid var(--color-iris);
-  fill: var(--color-iris);
-}
 .md-textarea {
   width: 100%;
+  height: 120px;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color:var(--color-navy-blue-modal);
+  height: 120px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  resize: none;
+  border: 1px solid var(--color-navy-blue-modal);
+  border-radius: 4px;
+
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  transition-property: outline-color;
+
+  transition-property:borde ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.md-agreemant-text {
+.md-textarea:focus{
+  outline-color:var(--color-iris);
+}
+.md-textarea::placeholder{
+  
+
+color:var(--color-navy-blue-modal);
+}
+
+.modal-form-agreement-box{
+
+
+}
+
+.md-agreemant-text{
+ 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: color(--color-navy-blue);
+font-size: 12px;
+line-height: 14px;
+
+letter-spacing: 0.04em;
+color:(--color-light-slate);
+  
 }
+
+
+
+
 /*============Modal Window end===============*/
 
 /*===============section 2 studio=================*/

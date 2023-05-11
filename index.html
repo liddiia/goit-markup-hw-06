@@ -72,82 +72,76 @@
                   <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
               </button>
-
-              <form name="contact-form">
-                <p class="md-top-text">
+<!--=========================Modal Forma=================-->
+ 
+                <strong class="md-top-text">
                   Leave your contacts and we will call you back
-                </p>
-                <label>
-                  <span class="md-entry-field-name">Name</span>
-                  <div class="md-entry-field">
-                    <svg class="md-entry-field-icons" width="12" height="12">
+                </strong>
+             <form class="md-form" name="contact-form">
+                <label class="md-form-label" for="user-name">Name</label>
+                <div class="md-field">
+                    <input
+                    class="md-input"
+                    type="text"
+                    name="user_name"
+                    id="user_name"
+                    required
+                    minlength="2" />
+                    <svg class="md-entry-field-icons" width="16" height="16">
                       <use href="./images/icons.svg#icon-person"></use>
                     </svg>
-                    <input class="md-entry" type="name" name="name" required />
+                   
                   </div>
-                </label>
-
-                <label>
-                  <span class="md-entry-field-name">Phone</span>
-                  <div class="md-entry-field">
-                    <svg class="md-entry-field-icons" width="13" height="13">
-                      <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                    <input
-                      class="md-entry"
+                
+                  <label class="md-form-label" for="phone_number">Phone</label>
+                  <div class="md-field">
+                      <input
+                      class="md-input"
                       type="tel"
                       name="phone_number"
+                      id="phone_number"
                       required
-                    />
-                  </div>
-                </label>
-                <label>
-                  <span class="md-entry-field-name">Email</span>
-                  <div class="md-entry-field">
-                    <svg class="md-entry-field-icons" width="15" height="12">
-                      <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
-                    <input
-                      class="md-entry"
-                      type="email"
-                      name="email"
-                      required
-                    />
-                  </div>
-                </label>
-                <label>
-                  <div>
-                    <span class="md-entry-field-name">Comment</span>
-                    <textarea
-                      class="md-textarea"
-                      name="feedback"
-                      rows=""
-                      placeholder="Text input"
-                    ></textarea>
-                  </div>
-                </label>
-                <label>
-                  <div>
-                    <input
-                      type="checkbox"
-                      name="hobby"
-                      value="music"
-                      checked
-                      required
-                    />
-                    <span class="md-agreemant-text">
-                      I accept the terms and conditions of the
-                      <a
-                        href=""
-                        target="_blank"
-                        rel="noopener noreffer"
-                        class="privat-policy"
-                      >
-                        Privacy Policy
-                      </a></span
-                    >
-                  </div>
-                </label>
+                      minlength="12"
+                      maxlength="12" />
+                      <svg class="md-entry-field-icons" width="17" height="17">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                     
+                    </div>
+                  
+
+                    <label class="md-form-label" for="email">Email</label>
+                    <div class="md-field">
+                        <input
+                        class="md-input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        minlength="2" />
+                        <svg class="md-entry-field-icons" width="19" height="16">
+                          <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                       
+                      </div>
+
+                      <label class="md-form-label" for="user_message">Comment</label>
+                      <textarea
+                        class="md-textarea"
+                        name="user_message"
+                        rows="6"
+                        placeholder="Text input"
+                      ></textarea>
+            
+                      <label class="md-form-agreement">
+                        <input class="modal-form-agreement-box" type="checkbox" name="user_agreement" />
+                        <span class="md-agreemant-text">
+                          I accept the terms and conditions of the 
+                          <a class="md-agreement-link" href=""> Privacy Policy</a>
+                        </span>
+                      </label>
+                                                  
+                  
                 <button class="button-studio button" type="submit">
                   Submit
                 </button>
