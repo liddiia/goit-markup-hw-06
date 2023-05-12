@@ -286,7 +286,6 @@ body {
   pointer-events: none;
 }
 
-
 /*===================Modal  Forma=================*/
 .md-top-text {
   display: block;
@@ -410,7 +409,6 @@ color:rgba(46, 47, 66, 0.4);
   background-size: 10px;
  /* transition-delay: 250ms, 250ms, 0;*/
 }
-
 
 .md-agreement-link {
   color: var(--color-iris );
